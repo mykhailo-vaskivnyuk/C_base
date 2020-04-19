@@ -1,0 +1,37 @@
+//int* f(char str1[], char str2[])
+{
+	char* ps1;
+	char* ps2;
+    char* ps;
+    
+	ps1 = &str1[0];
+	ps2 = &str2[0];
+//	ps = strstr(ps1, ps2);
+	int n = 2;
+	int pos[n];
+	pos[0] = 0;
+	pos[1] = 0;
+    ps = strstr(ps1, ps2);
+	if(ps != NULL)
+	{
+		pos[0] = ps - ps1;    
+//        for(;;;)
+//        {
+//            if(ps != NULL)
+//            {
+//				pos[1] = ps - ps1;
+//            	ps = strstr(ps + 1, ps2);
+//            }
+//            else
+//                break;
+//        }
+    }
+	
+    while( ps != NULL );
+    {
+		pos[1] = ps - ps1;
+        ps++;
+        ps = strstr(ps, ps2);
+    }
+//	return pos;
+}
